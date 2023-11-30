@@ -1,0 +1,6 @@
+1. sitemap
+2. google analytics
+3. google search console
+4. google tag manager
+5. Microsoft Clarity
+6. search sitelink
