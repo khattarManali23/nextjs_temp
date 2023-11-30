@@ -66,7 +66,7 @@ const AppNavbar: React.FC = () => {
             <ListItemButton
               component='a'
               href='#'
-              className='block md:inline-block text-black hover:text-[#CF1F2F] px-[0.1px] py-3 border-b-2 text-md first-letter: font-medium md:border-none'
+              className='block md:inline-block text-black hover:text-[#CF1F2F] px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
             >
               <Button size='sm' variant='primary'>
                 Directory
@@ -75,7 +75,7 @@ const AppNavbar: React.FC = () => {
             <ListItemButton
               component='a'
               href='#'
-              className='block md:inline-block text-black hover:text-[#CF1F2F] px-[0.1px] py-3 border-b-2 text-md first-letter: font-medium md:border-none'
+              className='block md:inline-block text-black hover:text-[#CF1F2F] px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
             >
               <Button size='sm' variant='primary'>
                 Sponsorship
@@ -84,7 +84,7 @@ const AppNavbar: React.FC = () => {
             <ListItemButton
               component='a'
               href='#'
-              className='block md:inline-block text-black  px-[0.1px] py-3 border-b-2 text-md first-letter: font-medium md:border-none'
+              className='block md:inline-block text-black  px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
             >
               <Button size='sm' variant='primary'>
                 Contact
@@ -93,7 +93,7 @@ const AppNavbar: React.FC = () => {
             <ListItemButton
               component='a'
               href='#'
-              className='block md:inline-block text-black  px-[0.1px] py-3 border-b-2 text-md first-letter: font-medium md:border-none'
+              className='block md:inline-block text-black  px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
             >
               <Button size='sm' variant='primary'>
                 Sign In
