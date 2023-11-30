@@ -36,7 +36,7 @@ const AppDrawer: FC<AppDrawerProps> = ({
         direction='row'
         spacing={2}
         alignItems='center'
-        justifyContent='center'
+        justifyContent='flex-end'
         className='flex justify-end p-2 '
       >
         <CancelIcon

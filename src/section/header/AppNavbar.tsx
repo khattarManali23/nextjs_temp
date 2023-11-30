@@ -100,13 +100,13 @@ const AppNavbar: React.FC = () => {
               </Button>
             </ListItemButton>
           </List>
-          <List className='flex justify-start items-start p-1 flex-col'>
+          <List className='flex justify-start items-start p-4 flex-col'>
             {list.map((item, index) => (
               <ListItemButton
                 key={index}
                 component='a'
                 href='#'
-                className='block md:inline-block text-black hover:text-[#CF1F2F] px-4 py-3 border-b-2 text-md first-letter: font-medium md:border-none '
+                className='block md:inline-block text-black hover:text-[#CF1F2F] px-4 py-8 border-b-2 text-md first-letter: font-medium md:border-none '
               >
                 {item}
               </ListItemButton>
