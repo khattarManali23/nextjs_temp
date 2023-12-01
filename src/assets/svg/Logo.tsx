@@ -4,8 +4,8 @@ const Logo: React.FC = () => {
   return (
     <svg
       viewBox='83.652 101.851 160.116 39.058'
-      width='160.116'
-      height='39.058'
+      width='200.116'
+      height='45.058'
       xmlns='http://www.w3.org/2000/svg'
     >
       <path

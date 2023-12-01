@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
+
 import MenuIcon from '@mui/icons-material/Menu';
 import { List, ListItemButton } from '@mui/material';
 import { Stack } from '@mui/system';
@@ -17,7 +20,18 @@ const AppNavbar: React.FC = () => {
 
   return (
     <nav className='flex flex-wrap w-full  items-center justify-center  '>
-      <div className='flex items-center sm:w-10/12  w-full  text-blue-900 mr-6 justify-between p-6'>
+      <div className='flex justify-center  object-contain items-center w-full  sm:h-[7.8rem] h-[7rem] bg-[#6DC39C] '>
+        <img src="./top.jpg" alt='topheader' style={{
+          width: "100%",
+          height: "100%",
+          objectFit: 'contain',
+
+
+        }}
+        />
+      </div>
+
+      <div className='flex items-center sm:w-[81%]  w-full  text-blue-900 mr-6 justify-between px-6 py-3'>
         <Stack
           direction='row'
           spacing={2}
@@ -45,19 +59,19 @@ const AppNavbar: React.FC = () => {
           >
             Sponsorship
           </a>
-          <a
+          {/* <a
             href='#'
             className='block md:inline-block text-black  px-3 py-3 border-b-2 text-md
           font-medium   md:border-none'
           >
             Contact
-          </a>
+          </a> */}
           <a
             href='#'
             className='block md:inline-block text-black  px-3 py-3 border-b-2 text-md
           font-medium   md:border-none'
           >
-            Sign In
+            Member Login
           </a>
         </div>
 
@@ -81,7 +95,7 @@ const AppNavbar: React.FC = () => {
                 Sponsorship
               </Button>
             </ListItemButton>
-            <ListItemButton
+            {/* <ListItemButton
               component='a'
               href='#'
               className='block md:inline-block text-black  px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
@@ -89,14 +103,14 @@ const AppNavbar: React.FC = () => {
               <Button size='sm' variant='primary'>
                 Contact
               </Button>
-            </ListItemButton>
+            </ListItemButton> */}
             <ListItemButton
               component='a'
               href='#'
               className='block md:inline-block text-black  px-[0.1px] py-6 border-b-2 text-md first-letter: font-medium md:border-none'
             >
               <Button size='sm' variant='primary'>
-                Sign In
+                Member Login
               </Button>
             </ListItemButton>
           </List>
@@ -115,15 +129,15 @@ const AppNavbar: React.FC = () => {
         </AppDrawer>
       </div>
       <div className='sm:flex  hidden justify-center items-center w-full  bg-[#CF1F2F]  '>
-        <div className='flex justify-center items-center w-10/12  bg-[#CF1F2F] mr-6 '>
+        <div className='flex justify-center items-center w-10/12  bg-[#CF1F2F] mx-[1rem]  '>
           {list.map((item, index) => (
             <div
               key={index}
-              className='flex justify-center items-center   bg-[#CF1F2F] mr-6 '
+              className='flex justify-center items-center   bg-[#CF1F2F] '
             >
               <a
                 href='#'
-                className='block md:inline-block text-white  px-3 py-3 border-b-2 text-lg
+                className='block md:inline-block text-white mr-7  px-3 py-3 border-b-2 text-lg
           font-medium   md:border-none'
               >
                 {item}
@@ -140,10 +154,14 @@ export default AppNavbar;
 
 const list = [
   'Home',
+  'About IIID',
   'Membership',
   'Events Calendar',
-  'New & Updates',
+  'News And Updates',
   'Glimpses',
-  'About IIID',
-  'More',
+  'Blogs',
+
+
+  'Contact Us'
+
 ];
